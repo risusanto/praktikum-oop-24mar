@@ -8,7 +8,7 @@ class A{
         friend int addNum(A);
 };
 
-int addNum(A numA){
+int addFive(A numA){
     return numA.num+5;
 }
 
@@ -16,6 +16,6 @@ using namespace std;
 int main(){
     A myA;
     myA.num = 7;
-    cout<<"A: " << addNum(myA) << endl;
+    cout<<"A: " << addFive(myA) << endl;
     return 0;
 }
